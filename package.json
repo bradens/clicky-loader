@@ -1,11 +1,27 @@
 {
   "name": "clicky-loader",
   "version": "0.1.0",
-  "description": "",
+  "description": "A modern CommonJS loader for Clicky",
   "main": "index.js",
+  "keywords": ["clicky"],
+  "homepage": "https://github.com/colonyamerican/clicky-loader",
+  "bugs": "https://github.com/colonyamerican/clicky-loader/issues",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ben Youngblood (ben.youngblood@colonyamerican.com)",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:colonyamerican/clicky-loader"
+  },
+  "author": {
+    "name": "Colony American Homes"
+  },
+  "contributors": [
+    {
+      "name": "Ben Youngblood"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "engines": {}
 }
