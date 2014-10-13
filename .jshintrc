@@ -1,0 +1,36 @@
+{
+  "browser"       : true,
+  "curly"         : true,
+  "eqeqeq"        : true,
+  "eqnull"        : true,
+  "freeze"        : true,
+  "funcscope"     : true,
+  "globals"   : {
+    /* MOCHA */
+    "describe"   : false,
+    "it"         : false,
+    "before"     : false,
+    "beforeEach" : false,
+    "after"      : false,
+    "afterEach"  : false
+  },
+  "globalstrict"  : true,
+  "immed"         : true,
+  "indent"        : 2,
+  "latedef"       : true,
+  "maxdepth"      : 3,
+  "maxstatements" : 15,
+  "maxlen"        : 100,
+  "newcap"        : false, // Turning this on makes it annoying to use capital tags in JSX
+  "noempty"       : true,
+  "nonew"         : true,
+  "quotmark"      : false, // JSXTransformer breaks this. (https://github.com/facebook/react/issues/445)
+  "strict"        : true,
+  "trailing"      : true,
+  "unused"        : "vars",
+  "predef"        : [
+    "exports",
+    "module",
+    "require"
+  ]
+}
