@@ -56,6 +56,7 @@ if ( ! window.clicky) {
 var clickyMethods = [
   'init',
   'log',
+  'goal',
   'setVisitorData'
 ];
 
