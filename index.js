@@ -45,10 +45,18 @@ function clickyLoaded() {
   runPostLoadCalls();
 }
 
-if (window && !window.clicky) {
-  clickyLoader(clickyLoaded);
-} else if (window) {
-  clickyLoaded();
+function loadClicky() {
+  if (!window.clicky) {
+    clickyLoader(clickyLoaded);
+  } else {
+    clickyLoaded();
+  }
+}
+
+if (typeof window !== 'undefined') {
+  // We don't have a window
+  console.log("[clicky-loader] running under windowless environment, don't load")
+  loadClicky()
 }
 
 // This will define our public API
