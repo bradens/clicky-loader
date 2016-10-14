@@ -42,13 +42,12 @@ function clickyLoaded() {
     // Patch setVisitorData into window.clicky
     window.clicky.setVisitorData = setVisitorData;
   }
-
   runPostLoadCalls();
 }
 
-if ( ! window.clicky) {
+if (window && !window.clicky) {
   clickyLoader(clickyLoaded);
-} else {
+} else if (window) {
   clickyLoaded();
 }
 
