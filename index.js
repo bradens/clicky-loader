@@ -54,8 +54,6 @@ function loadClicky() {
 }
 
 if (typeof window !== 'undefined') {
-  // We don't have a window
-  console.log("[clicky-loader] running under windowless environment, don't load")
   loadClicky()
 }
 
